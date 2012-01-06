@@ -1,0 +1,25 @@
+Source: x11proto-scrnsaver
+Section: x11
+Priority: optional
+Maintainer: SooChan Lim <sc1.lim@samsung.com>, Sangjin Lee <lsj119@samsung.com>, Debian X Strike Force <debian-x@lists.debian.org>
+Uploaders: SooChan Lim <sc1.lim@samsung.com>, David Nusinow <dnusinow@debian.org>, Andres Salomon <dilinger@debian.org>, Julien Cristau <jcristau@debian.org>, YoungHoon Jung <yhoon.jung@samsung.com>
+Build-Depends: debhelper (>= 5.0.0), automake, xutils-dev (>= 1:7.3+4)
+Standards-Version: 3.8.3
+Vcs-Git: git://git.debian.org/git/pkg-xorg/proto/x11proto-scrnsaver
+Vcs-Browser: http://git.debian.org/?p=pkg-xorg/proto/x11proto-scrnsaver.git
+
+Package: x11proto-scrnsaver-dev
+Architecture: all
+Depends: ${shlibs:Depends}, ${misc:Depends}, x11proto-core-dev
+Breaks: libxss-dev (<< 1:1.2.0)
+Description: X11 Screen Saver extension wire protocol
+ This package provides development headers describing the wire protocol
+ for the MIT-SCREEN-SAVER extension, used to notify the server of client
+ screen saver events.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ <URL:http://xorg.freedesktop.org>
+ <URL:http://lists.freedesktop.org/mailman/listinfo/xorg>
+ .
+ This package is built from the X.org scrnsaverproto proto module.
