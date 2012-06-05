@@ -6,7 +6,7 @@ Release:    1
 Group:      Development/System
 License:    MIT
 URL:        http://www.x.org
-Source0:    http://xorg.freedesktop.org/releases/individual/proto/scrnsaverproto-%{version}.tar.gz
+Source0:    %{name}-%{version}.tar.gz
 Source1001: packaging/xorg-x11-proto-scrnsaverproto.manifest 
 Provides:   scrnsaverproto
 BuildRequires: pkgconfig(xorg-macros)
